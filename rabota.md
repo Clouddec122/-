@@ -329,3 +329,8 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER trigger_log_enrollment
 AFTER INSERT OR UPDATE OR DELETE ON Enrollments
 FOR EACH ROW EXECUTE FUNCTION log_enrollment
+
+![24](https://github.com/Clouddec122/-/raw/main/24.png)
+![25](https://github.com/Clouddec122/-/raw/main/25.png)
+
+
