@@ -25,7 +25,7 @@ CREATE TABLE Students (
     birth_date DATE,
     group_id INT REFERENCES Groups(group_id)
 );
-
+---
 CREATE TABLE Professors (
     professor_id SERIAL PRIMARY KEY,
     full_name VARCHAR(100),
