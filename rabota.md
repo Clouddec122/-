@@ -263,6 +263,9 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+![18](https://github.com/Clouddec122/-/raw/main/18.png)
+
+
 CREATE OR REPLACE FUNCTION add_grade(p_student INT, p_exam INT, p_grade NUMERIC)
 RETURNS VOID AS $$
 BEGIN
@@ -270,6 +273,9 @@ BEGIN
     VALUES (p_student, p_exam, p_grade);
 END;
 $$ LANGUAGE plpgsql;
+
+![19](https://github.com/Clouddec122/-/raw/main/19.png)
+
 
 CREATE OR REPLACE FUNCTION mark_attendance(p_student INT, p_schedule INT, p_attended BOOLEAN)
 RETURNS VOID AS $$
@@ -279,6 +285,9 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+![20](https://github.com/Clouddec122/-/raw/main/20.png)
+
+
 CREATE OR REPLACE FUNCTION submit_assignment(p_student INT, p_assignment INT, p_date DATE)
 RETURNS VOID AS $$
 BEGIN
@@ -287,6 +296,9 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+![21](https://github.com/Clouddec122/-/raw/main/21.png)
+
+
 CREATE OR REPLACE FUNCTION create_course(p_title TEXT, p_credits INT)
 RETURNS VOID AS $$
 BEGIN
@@ -294,6 +306,8 @@ BEGIN
     VALUES (p_title, p_credits);
 END;
 $$ LANGUAGE plpgsql;
+
+![22](https://github.com/Clouddec122/-/raw/main/22.png)
 
 
 Триггеры на CRUD
