@@ -3,7 +3,8 @@ REATE TABLE Faculties (
     faculty_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
-![123] https://github.com/user-attachments/assets/19cbee03-b206-4058-be31-f3dde46e7ca2](https://github.com/Clouddec122/-/blob/main/123.png)
+![123](https://github.com/Clouddec122/-/raw/main/123.png)
+
 
 CREATE TABLE Departments (
     department_id SERIAL PRIMARY KEY,
