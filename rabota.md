@@ -5,6 +5,7 @@ REATE TABLE Faculties (
 );
 ![123](https://github.com/Clouddec122/-/raw/main/123.png)
 
+![2](https://github.com/Clouddec122/-/raw/main/2.png)
 
 CREATE TABLE Departments (
     department_id SERIAL PRIMARY KEY,
@@ -115,84 +116,109 @@ INSERT INTO Departments (name, faculty_id) VALUES
 ('History', 2),
 ('Computer Science', 3),
 ('Electrical Engineering', 3);
+![3](https://github.com/Clouddec122/-/raw/main/3.png)
+
 
 INSERT INTO Groups (name, department_id) VALUES 
 ('Group A', 1),
 ('Group B', 2),
 ('Group C', 4),
 ('Group D', 5);
+![4](https://github.com/Clouddec122/-/raw/main/4.png)
 
 INSERT INTO Students (full_name, birth_date, group_id) VALUES 
 ('Alice Johnson', '2002-05-14', 1),
 ('Bob Smith', '2001-03-22', 2),
 ('Charlie Brown', '2003-07-09', 3),
 ('Diana Prince', '2002-11-30', 4);
+![5](https://github.com/Clouddec122/-/raw/main/5.png)
+
 
 INSERT INTO Professors (full_name, department_id) VALUES 
 ('Dr. Alan Turing', 4),
 ('Dr. Marie Curie', 2),
 ('Dr. Isaac Newton', 1),
 ('Dr. Ada Lovelace', 5);
+![6](https://github.com/Clouddec122/-/raw/main/6.png)
+
 
 INSERT INTO Courses (title, credits) VALUES 
 ('Calculus I', 4),
 ('Modern Physics', 3),
 ('Data Structures', 4),
 ('Electrical Circuits', 3);
+![7](https://github.com/Clouddec122/-/raw/main/7.png)
+
 
 INSERT INTO Course_Professors (course_id, professor_id) VALUES 
 (1, 3),
 (2, 2),
 (3, 1),
 (4, 4);
+![8](https://github.com/Clouddec122/-/raw/main/8.png)
 
 INSERT INTO Enrollments (student_id, course_id, semester) VALUES 
 (1, 1, 'Fall'),
 (2, 2, 'Fall'),
 (3, 3, 'Fall'),
 (4, 4, 'Fall');
+![9](https://github.com/Clouddec122/-/raw/main/9.png)
+
 
 INSERT INTO Exams (course_id, exam_date, location) VALUES 
 (1, '2025-12-01', 'Room 101'),
 (2, '2025-12-02', 'Room 102'),
 (3, '2025-12-03', 'Room 103'),
 (4, '2025-12-04', 'Room 104');
+![10](https://github.com/Clouddec122/-/raw/main/10.png)
+
 
 INSERT INTO Grades (student_id, exam_id, grade) VALUES 
 (1, 1, 88.50),
 (2, 2, 79.00),
 (3, 3, 91.75),
 (4, 4, 85.00);
+![11](https://github.com/Clouddec122/-/raw/main/11.png)
+
 
 INSERT INTO Classrooms (name, capacity) VALUES 
 ('Room 101', 30),
 ('Room 102', 40),
 ('Room 103', 25),
 ('Room 104', 35);
+![12](https://github.com/Clouddec122/-/raw/main/12.png)
+
 
 INSERT INTO Schedules (course_id, classroom_id, start_time, end_time, day_of_week) VALUES 
 (1, 1, '09:00', '10:30', 'Monday'),
 (2, 2, '11:00', '12:30', 'Tuesday'),
 (3, 3, '13:00', '14:30', 'Wednesday'),
 (4, 4, '15:00', '16:30', 'Thursday');
+![13](https://github.com/Clouddec122/-/raw/main/13.png)
+
 
 INSERT INTO Attendance (student_id, schedule_id, attended) VALUES 
 (1, 1, TRUE),
 (2, 2, FALSE),
 (3, 3, TRUE),
 (4, 4, TRUE);
+![14](https://github.com/Clouddec122/-/raw/main/14.png)
+
 
 INSERT INTO Assignments (course_id, title, due_date) VALUES 
 (1, 'Limits and Derivatives', '2025-10-01'),
 (2, 'Quantum Theory Essay', '2025-10-05'),
 (3, 'Binary Trees Implementation', '2025-10-10'),
 (4, 'Resistor Calculations', '2025-10-15');
+![15](https://github.com/Clouddec122/-/raw/main/15.png)
+
 
 INSERT INTO Assignment_Submissions (assignment_id, student_id, submission_date, grade) VALUES 
 (1, 1, '2025-09-30', 92.00),
 (2, 2, '2025-10-04', 78.50),
 (3, 3, '2025-10-09', 88.00),
 (4, 4, '2025-10-14', 85.50);
+![16](https://github.com/Clouddec122/-/raw/main/16.png)
 
 
 Представления 
