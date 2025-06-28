@@ -392,7 +392,10 @@ JOIN Professors p ON cp.professor_id = p.professor_id;
 SELECT * FROM student_courses_view;
 SELECT * FROM course_enrollment_counts;
 REFRESH MATERIALIZED VIEW course_enrollment_counts;
+```
+
 -- Запишем нового студента на курс
+```sql
 SELECT enroll_student(1, 2, 'Spring');
 ```
 
