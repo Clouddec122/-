@@ -6,7 +6,7 @@ REATE TABLE Faculties (
 ![123](https://github.com/Clouddec122/-/raw/main/123.png)
 
 ![2](https://github.com/Clouddec122/-/raw/main/2.png)
-
+```sql
 CREATE TABLE Departments (
     department_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
