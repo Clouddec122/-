@@ -130,19 +130,19 @@ INSERT INTO Groups (name, department_id) VALUES
 ![4](https://github.com/Clouddec122/-/raw/main/4.png)
 
 INSERT INTO Students (full_name, birth_date, group_id) VALUES 
-('Alice Johnson', '2002-05-14', 1),
-('Bob Smith', '2001-03-22', 2),
-('Charlie Brown', '2003-07-09', 3),
-('Diana Prince', '2002-11-30', 4);
+('Ilja Motorov', '2002-05-14', 1),
+('Semen Kuznecov', '2001-03-22', 2),
+('Anton Kalmikov', '2003-07-09', 3),
+('Diana Krimova', '2002-11-30', 4);
 
 ![5](https://github.com/Clouddec122/-/raw/main/5.png)
 
 
 INSERT INTO Professors (full_name, department_id) VALUES 
-('Dr. Alan Turing', 4),
-('Dr. Marie Curie', 2),
-('Dr. Isaac Newton', 1),
-('Dr. Ada Lovelace', 5);
+('Dr. Anton Turing', 4),
+('Dr. Karl Curie', 2),
+('Dr. Tomass Newton', 1),
+('Dr. Lida Lovelace', 5);
 
 ![6](https://github.com/Clouddec122/-/raw/main/6.png)
 
