@@ -334,3 +334,68 @@ FOR EACH ROW EXECUTE FUNCTION log_enrollment
 ![25](https://github.com/Clouddec122/-/raw/main/25.png)
 
 
+
+-- Все факультеты
+SELECT * FROM Faculties;
+
+![26](https://github.com/Clouddec122/-/raw/main/26.png)
+
+-- Все департаменты с названием факультета
+SELECT d.department_id, d.name, f.name AS faculty_name
+FROM Departments d
+JOIN Faculties f ON d.faculty_id = f.faculty_id;
+
+![27](https://github.com/Clouddec122/-/raw/main/27.png)
+
+
+-- Все студенты с группами
+SELECT s.student_id, s.full_name, g.name AS group_name
+FROM Students s
+JOIN Groups g ON s.group_id = g.group_id;
+
+![28](https://github.com/Clouddec122/-/raw/main/28.png)
+
+
+-- Все курсы с преподавателями
+SELECT c.title, p.full_name AS professor
+FROM Courses c
+JOIN Course_Professors cp ON c.course_id = cp.course_id
+JOIN Professors p ON cp.professor_id = p.professor_id;
+
+![29](https://github.com/Clouddec122/-/raw/main/29.png)
+
+
+SELECT * FROM student_courses_view;
+SELECT * FROM course_enrollment_counts;
+REFRESH MATERIALIZED VIEW course_enrollment_counts;
+-- Запишем нового студента на курс
+SELECT enroll_student(1, 2, 'Spring');
+
+![30](https://github.com/Clouddec122/-/raw/main/30.png)
+
+
+-- Добавим новую оценку студенту
+SELECT add_grade(1, 2, 95.5);
+
+-- Отметим посещаемость
+SELECT mark_attendance(1, 2, TRUE);
+
+![31](https://github.com/Clouddec122/-/raw/main/31.png)
+
+
+-- Сдача задания
+SELECT submit_assignment(1, 2, CURRENT_DATE);
+
+-- Создадим новый курс
+SELECT create_course('Philosophy 101', 3);
+
+![32](https://github.com/Clouddec122/-/raw/main/32.png)
+
+SELECT * FROM Enrollments WHERE student_id = 1;
+SELECT * FROM Grades WHERE student_id = 1;
+SELECT * FROM Attendance WHERE student_id = 1;
+SELECT * FROM Assignment_Submissions WHERE student_id = 1;
+SELECT * FROM Courses WHERE title = 'Philosophy 101';
+
+![33](https://github.com/Clouddec122/-/raw/main/33.png)
+
