@@ -267,7 +267,7 @@ GROUP BY c.course_id;
 ![17](https://github.com/Clouddec122/-/raw/main/17.png)
 
 
-Хранимые процедуры 
+Хранимые и действие с ними
 
 ```sql
 CREATE OR REPLACE FUNCTION enroll_student(p_student INT, p_course INT, p_semester TEXT)
