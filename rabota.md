@@ -249,6 +249,8 @@ FROM Courses c
 LEFT JOIN Enrollments e ON c.course_id = e.course_id
 GROUP BY c.course_id;
 
+![17](https://github.com/Clouddec122/-/raw/main/17.png)
+
 
 Хранимые процедуры 
 
