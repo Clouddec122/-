@@ -134,6 +134,7 @@ INSERT INTO Students (full_name, birth_date, group_id) VALUES
 ('Bob Smith', '2001-03-22', 2),
 ('Charlie Brown', '2003-07-09', 3),
 ('Diana Prince', '2002-11-30', 4);
+
 ![5](https://github.com/Clouddec122/-/raw/main/5.png)
 
 
