@@ -107,6 +107,7 @@ INSERT INTO Faculties (name) VALUES
 ('Faculty of Science'),
 ('Faculty of Arts'),
 ('Faculty of Engineering');
+![2](https://github.com/Clouddec122/-/raw/main/2.png)
 
 INSERT INTO Departments (name, faculty_id) VALUES 
 ('Mathematics', 1),
